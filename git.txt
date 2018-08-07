@@ -1,0 +1,24 @@
+SKS
+dosyada bir değişikli yapıldığında gerektiği dudmda eski sürümlere geri dönme 
+kimin ne değişikliği neden ytığını görebiliriz
+ekip çalışmasını kolaylaştırır
+yerel srüm kontrol sistemeeri
+MErkezi SKS-sunucuda saklanıyor fakat sunucuya birşey olursa ?
+Dağıtık SKS-sunucu ve kişşisel bilgisyararda saklanıyor SKS sunucu patlasa bile projede çalışanlarda bulunuyor projein sürüm veri tabanı 
+
+Git
+git init 
+yapıldığında
+git status
+git add 
+
+Dizinler -Sahne -Git deposu 
+git commit 
+git config username 
+git clone 
+git push
+git pull
+
+hooks
+
+

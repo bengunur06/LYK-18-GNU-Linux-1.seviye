@@ -1,0 +1,204 @@
+﻿linux sistem yönetimi 1. Düzey -2.gün 
+
+Sanallaştırma teknolojisi 
+*Sanallaşştırma bize bilgisayardaki fiziksel donanımı kullanmamızı sağlıyor
+sunucu 
+masaüstü
+uygulama 
+			sanallaştırılabilir 
+			
+
+sanallaştırmanın artıları 
+-sistem kaynaklaını yüksek verimlilikle kullanılabilir 
+-aynı anda birbirinden farklı 2 ya da daha fazla işletim sistemini koşşturma imkanı
+-snapshotlar ile ihtiyaç anında kullanılabilir
+-donanım uyum sorunlarından kurtulursunuz
+-
+-sunucuya bakım yapmak daha kolay 
+
+Yazılım tarafından sanallaştırma 
+Donanım tarafından sanallaştırma=sadece sanallaştırmak için kurulmuş bir işletim sistemi kullanılıyor 
+
+sunucu sanallaştrımanın çeşitleri 
+kap  sanallaştırma 
+Tam sanallaştırma 
+
+KVM -tam sanallaştırmaçözümü ,kernel seviyesinde ,açık kaynak kodlu
+Poroxmox**
+
+Yazılım tarafından sanallaştırma
+Virtual box - c ile geliştirilmiş ,GPL lisansı ,c dilinde geliştirilmiş ,arayüzü Türkçe,
+VMware workstation-
+
+TURNKEY linux ** göz at bu hazır sanal sunucu kurulumu çok kolay  deneyebilirsin 
+
+Bir işletim sistemi kurulurken ne sorar ?
+-Disk bölümlendirmeyi 
+-root parolasını
+3-tarih/saat bölgesini 
+2-klavye tipini    
+-lisans
+-IP ayarlarını 
+-paket seçimi 
+-firewall öntanımlı olarak açık olma durumunu 
+- güncelleme şeklini 
+-Önyükleyici nereye kuracağını 
+1-dil seçimi (2 çeşittir kurucu dili ve kurulan dil olarak )  
+
+
+bu üç şey ^ her kurulumda sorulur 
+
+önyükleyici kernelu uyandır ve ram'e yükler 
+
+sunucunun saati doğrulmazsa sunucuya bir saldırı olduğunda adamın ne kadar sre kaldığı gibi durumlar bilinmez 
+
+
+KDE de dosya yöneticisi  dolphin 
+Xfc tunar- XFCe terminal
+Gnome natilius -Gnome terminal 
+
+
+kullanıcı adı seçimi 
+-yanlızca ingilizce karekterlerden olmalı 
+-8 karakteer uzunluğunu geçmemeli(  bit önneremesinin sebebi  byte a sığsın diye önerilen birey ama istenirse daha uzun olabilir şifre)
+parola seçimi:
+şifre  ve parola farkı 
+=şifre parolanın kriptolanmış halidir 
+bankamatik ifresi olamaz parola ezberde olan bilgidir şifre onun kriptolanmış bir şekilde saklanmış halidir 
+Unixde parolalar şifrelenmi bir şekilde sakllanır ve tek yöönlüdr 
+şifreni alan biri parlaya döndüremez onu 
+
+iyi bir parola =kolayca tahmin edilemecek kadar karmaşık unutullamayacak kadar basit olmalı
+
+parola oluştururken kullanıcıyı parola değiştirme sistemini doğru kurallara göre hazırlamalı mesela büyük harf küçük harf sayı olmalı gibi 
+
+
+cat etc/passwd
+: ayraç 
+kuulanıcı adı :şifre :user ıd :grup id:
+
+
+ls -l / 
+
+her kullanıcının ev dizini homun altında 
+var dizini kütphaneler 
+
+/tmp dizini Unix için geçici kullanım dizini  *belli aralıklarla tmeizlenir kalıcı depolama için kullnaılamaz
+ 
+ kabuk nedir ??
+linux ile iletişimini sağlayan eldivendir *kirpi 
+kernel ile iletişimimii sağlayan yapı 
+exit ile çıkış yapılır
+ctrl+alt+f1
+man ls
+parametreleri ezberleme man yaz bul oku 
+komut ne işe yarıyor o kadar öğren 
+klavuz sayfalarında anahtar kelime aratmak man -K directory,man -K board
+internet olmadığında sistem yöneticiye man sayfası yardım eder
+bir sisteme bağlı iki kullanıcı write komutunu kullanarak birbirine mesaj atabilri 
+wall komutu tüm kullanıcılara mesaj göndermek için root yapabilr 
+/etc/motd (message of today ) sisteme login olduğunuzda mesaj çıkması 
+unixde her kullanıcının bir user id bir kullanıcı ,id si var
+tek köklü ağaç  yapsı şeklinde Unix
+
+
+
+
+ROOT
+en yetkili kullanıcı 
+user id =0
+grup id =0
+grup bilgileri  etc/group
+
+
+Unixde hakalar
+groupadd
+groupdel
+id profelis
+
+groupadd ile yeni grup ekle
+gpasswd -a kullanıcı grup 
+gpasswd  -d sil kullanıcıyı grupan sil
+
+kullancıılar sadece bir grubun üyesi olarak çalışabilri 
+bir dosyanın 3 tip hakları var sahibinin ,gruptakilerin ,ve diğerlerinin hakları 
+id 
+touch
+ls
+nwgrp
+id 
+w komutu kullanıcının o an ne yaptığını da söyler
+
+passwd parola değişikliği için 
+kendi parolamızı belirlerken 
+
+Unix sistemlerde bissürü shell var
+chsh 
+cat /etc/passwd
+
+finger
+
+sudo su
+
+PAM -sistemde parola doğrulamayı kolaylaştırmk için 
+pam nedir niçinn geliştirilmiş ne işe yarar ?
+chfn
+bir kullanıcı en az bi gruba üye olmak zorunda 
+bir dosya ya da dzin bir gruba ait olmalı var olmak için 
+
+Dosya ve dizin erişimi 
+komutlara seçenekler -
+komutlar arası ; farklı bir satırda ggibi 
+
+&&  vve ||
+0 başarılı 
+1 başarısız
+
+
+mkdir -dizin açma 
+mkdir -p bulunan dizinde bir dizin aç onnun altıa başka bir dizin a 
+dosya yönetim komutları işletim sistemi bağımsız 
+
+rm -remove 
+rm -rf herşeyi siler 
+
+touch =dosya yoksa oluşturulur varsa son erişim zamanı güncellenir 
+bir dosya sisteminde neler saklanırr nerede niye ne formatta neden kritik 
+
+cp kaynak hedef 
+
+file dosya kurtarmada çok önemli ,dosyanın türünü söyler 
+
+
+mv
+
+kalıp eşleştirme 
+*=her şey 
+?=herhangi bir karakter 
+[]=aralıkta bir karakter 
+
+find
+man 
+
+-name 
+-type
+-user-uid
+-size
+
+
+xargs 
+
+ters tırnak ' kuullanılan ilk gerçeklşir 
+qq
+reactos
+howtoforge
+li.org
+
+
+
+
+
+
+
+
+

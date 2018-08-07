@@ -1,0 +1,25 @@
+ssd ve hdd farkı 
+fstrim
+nad bellek
+raid yapısını araştır
+bilgiye ulaşırken yapacağımız şeyler
+-konuyla ilgili temel kavramları öğren 
+-bir bbilgiyi hafızana kalıcı olarak kaydetmek için işin hikayesini öğren 
+-kavramları ilişkilendimek 
+-asıl konuyu okumaya başlamak 
+-bilginin  nerede nasıl kullanılacağı 
+-karşılaştırmak ,alternatifler
+
+
+BASH kabuğunda script yazma(betik yazma)
+
+caseler
+if ve while
+
+Özel değişkenler 
+$?
+$1
+$$
+$!
+
+

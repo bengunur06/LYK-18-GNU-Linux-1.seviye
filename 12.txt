@@ -1,0 +1,106 @@
+virtual hosting anlamak için DNS iyi bilmek gerekiyor 
+bilgisayara iki şekilde ulaşılır 
+-ismiyle 
+-IP
+
+
+DNS
+dağıtık bir yapı
+127 altt seviye bulunur
+dns ağacının en tepesinde root sunucular bulunur 
+dns cache -bilmeyip sorup ğrendiği adresi öğrenmesi 
+ttl=dns sunucununn bir sorgu sonucu elde ettiği bilgileri ne kadar saklayacağını söylüyor
+ıp değiştirmenin dns sunucularına yayıllması 24 saat sürer
+kurum ripe 'dan ip adresinnni oradan alırsa ve o ip blogu ona tahsis edilirse kurum onla alışmaya devam eder
+dns sunucuları primary master çalışır 
+slave alanın yardımcı dns sunucusudur 
+zone ve domain 
+zone -DNS in yönetilebilir kısmı 
+BIND -dns hizmeti sunan 
+ismden ip öğrenme düz dns sorguları 
+SOA -yetki başlangıcı 
+NS -isim sunucusu tanım 
+MX-posta transferi
+ip spoofing 
+DNS servisini başlatmak 
+DNS sorgulama komutları 
+host
+nslookup
+dig
+
+Web teknolojileri 
+apache web server 
+handlers nedir?
+wps ?
+server side inludes ?
+url Mapping 
+Url writing 
+virtual host 
+
+okunma süüresi sayfaların
+keepaliveon
+Hostnamelookups -siteyi yyavaşlatan birşey off ya da on olablir 
+Server Signature - 
+aynı ip adresinden sunma
+HT acces 
+
+moduller
+mod_dir 
+mod_alias
+mod_access
+
+çoklu erişim loglarını farklı dosyaara kaydedebilirsin  nadir kullanılır 
+loglaı kayıt edilmeden sadeleştirbilirsin 
+a2enmod php
+lynx indir bak
+a2dismod =kapatılacak mod 
+
+cd /srv/www/htdocs
+cat phpinfo.php
+<?
+phpinfo();
+?>
+
+systemctl start mysql.service
+systemctl enable -service-
+
+
+zypper in lightpd
+
+login olurken aynı seesion ile devam edersin 
+cookieler web tarayıcısında nasıl tutulur ?
+
+xfs ile ftp serveralrda 
+
+ip tables bir ARAÇTIR
+netfilter sisteminin becerileri 
+-durum korumalı ve durum korumasız filtreleme
+-ağ adresi dönüşüümü 
+netfilter ip tables aracı kullnılarak yapılandırırlır 
+ağ adresi dönüşümü
+ip maskeleme
+paket değiştirme ve işaretleme 
+ftp 21 portunda çalışır 
+ağ adres dönüüm zincirleri 
+ip tables arcının kullanırken 4 direktip
+ACCEPT
+DROP
+REJECT
+QUEUE
+
+hangi arayüzden geldiğinin önemi varmı ?
+iptables -A 
+-A(append)
+
+ip tables ile herhangibiryyerden ssh bağlantısını engelle
+Ağ adres dönüşümü NAT 
+
+nat 
+SNAT
+DNAT
+
+transparent proxy nedir ?
+
+firewalllar min 
+
+

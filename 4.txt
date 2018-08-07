@@ -1,0 +1,86 @@
+Sistem yönetimi 1. Düzey -4.gün
+
+Standart girdi çıktı 
+stdin 0
+stdo 1
+stderr 2
+
+
+dosyanın üzerine de yazablirsiniz üstüne de 
+>> dosyanın devamına yazılır 
+> dosyayı silere 
+2> dosya dendiğinde hataları yazar bir dosyaya 
+pipe | 
+program1 | program2 -program1 in çıktısı program 2 ye gider 
+
+girdi olarak göndermek için <
+
+grep 
+grep -v
+
+sort 
+
+tee kendisine gelen veriyi olduğu gibi aktarır ve bunu yaparken kaydedder 
+
+rpm -qa >paketler txt 
+kaç satır kaç kelime 
+sort ederken bak 
+
+Linux kabuğunun çeşitleri 
+set 
+
+Bourne Again shell 
+komut satırı düenlemek 
+bir bolümü yazılmış sözcüükleri tamamlamak 
+Unix case sensetive windowsdeğil 
+alias ve fonksiyon destekler 
+bashrc ye kaydedilmedii sürece aliaslar geçici 
+çevre değişkenleri PATH
+TERM değişkeni 
+ctrl+a satır başı
+ctrl+e satr sonu
+crtl+l ekranı temizle
+ctrl+u imleten önce sini siler
+ctrl+k imleçten sonrsasını siler 
+crtl+r ile aratarak eski komutlara bakılablir 
+
+
+alias dir="ls -l"
+unalias dir
+unalias -a
+
+komutun sonuna & eklemek arka planda çalışmasaını sağlar
+wget
+komutun yanında & eklenerek arka planda çaışır
+bg ile arkada devam eder
+
+süreçler sinyalerle tönetilir kill ile iletilir 
+bash kabuğunun ööelliklerinden biri promt ekranı 
+çevre değişken ,
+
+$PS1
+
+
+Metin işleme
+cat ile iki dosya da birleştirilebilir
+head 
+
+tail
+
+cut
+
+uniq
+tr
+grep
+******split**** 
+paste 
+join
+more 
+less
+md5sum
+nl
+
+expand 
+fmt -w 
+uexpand 
+//ödev 

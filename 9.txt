@@ -1,0 +1,118 @@
+
+fsck
+blkid de alınan bilgiler fstaba yazılır 
+klasik linux açılışı 
+init yapısı -sıralama zorunluluğu
+soketler ile iletişim
+
+systemd farkı
+paralel processing
+
+systemctl servislere ilgilenir
+journalctl loglarla ilgilenir
+
+notify erorları tutar bize söyler
+
+
+analyze aılışşındAKİ bilgileri
+
+cgls
+
+cgtop canlı sistemde çalışanalrı
+
+loginctl
+
+nspawn
+
+systemctl reboot hibernate poweroff
+
+/usr/lib/systemd/system dizini altında unit file lar
+
+.service
+
+run levels=runlevel1 rescueshell
+systemctl :enable start
+
+systemd nin point ettiği deamonu çalıştırması iççin service dosyaları oluşturuluyor
+
+
+journalctl ile logları okyabiliriz 
+
+systemd-cgls =
+systemd-cgtop
+loginctl list-sessions
+
+Unix tek köklü bir hiyerarşi vardır
+/etc configurasyon doyaları
+/bin komutlar
+/sbin =daha çok rootun alıştıracağı komutlar
+/lib =kütphaneler
+/dev 
+/mnt =bağlanan cihazları listeliyor
+/opt =dısardan kurulmuş 
+/usr =users
+/var varible ,var log loglar tutulur 
+/tmp =herkes yazabilir geici tutulur dosyalar
+
+
+swap alanı =ram yetmediğinde kullanılır
+swapon
+swapoff
+free =ram bilgisini göserir
+
+fstabdaki 00 ların anlamı
+fstab değiştirmeden önce yedeğini al 
+chage
+groupmod 
+usermod
+useradd
+userdel
+
+groupadd
+groupmod
+groupdel
+newgrp
+
+SGID
+SUID
+
+Ağ bilgisi 
+ip v4 /v6
+
+192.168.x.x ip round 
+172.16.x.x 
+
+ip
+netmask 
+gateway
+DNS
+
+DHCP
+
+ipconfig
+TCP/IP araştır
+ifconfig
+ethernette 
+ifcfg-eta?
+route
+internet hızı diye birşey yoktur bant genişliği diye birşey vardır 
+
+sunucuya bir talep yapılldığın da 
+bonding anca switch destekliyorsa yapılablir
+bonding en az iki kartla yapılır 
+sdece linuxa ozg değil windowta da yapılır
+sunucunu ip adresi ethernet kartında olmaz arayyüzde olur 
+arp=ip ye karşılık gelen donanım adreslerini bulmaya yarar
+netstat
+ping
+traceroot=routing kaybolduğu zamanlarda kullanılıyor
+nslookup
+host
+whois
+dig
+
+swapon 
+/etc/passwd kullanıcı parolası
+/etc/shadow şifreler
+pwuncony
+usermod

@@ -1,0 +1,35 @@
+linux sistem yönetimi 1. düzey -5.gün
+süreçler
+mkdir 'seq 1 10'
+random sayi üretme
+fmt
+mkdir `cat wow.txt'
+mkdir $(cat isimler.txt)
+cat isimler.txt |xargs mkdir 
+rm `cat isimelr.txt`
+ters tırnak bir programn çıktıını başka bir 
+X sistemi
+GNOME
+tecmint
+pico nano
+vim
+vi=ESC+:+q+!
+ls
+jed
+sistemd
+systemctl
+hibernate iile suspendin farkı
+LVM
+deflack
+raid 
+ssd
+trim kavramı =fstrim
+sabit disk ve ssd farkı 
+//ödev ssd nedir
+bellekleri araştır
+
+fsck
+blkid de alınan bilgiler fstaba yazılır 
+swapon 
+
+

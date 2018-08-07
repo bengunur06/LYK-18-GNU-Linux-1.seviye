@@ -1,0 +1,58 @@
+6. gün
+
+Süreçler ve ilk adımlar 
+fg komutu 
+inode
+ps komutu 
+Sigterm
+sigkill
+
+ctrl+z sıgtop
+
+sigcont
+sighup
+killall
+nice=önceliği belirlerken 
+
+initin anlamamız gerek 
+sysinit fdckdisk check disk 
+
+once 
+respawn program biterse tekrar balatılır örnek bash
+wait
+powerfail 
+powerokwait
+
+
+poweoff ile shutdown arasındaki fark 
+systemd
+
+ileri tarihe görev atama 
+at ve batch görev atamada ileri tarihe 
+
+
+at 0545pm Jul 2
+cd/calısma
+
+
+crontab 
+30 06 * * 1-5
+anacron crond  =crond gibi bilgisayarın 24 saat açık olacağını farz etmez
+
+systemd
+bir ahtPOT
+analyze ile yazdırma
+cgis 
+loginctl
+systemctl set-default 
+startx
+journalctl
+dmesg
+
+
+
+ps ax
+ps aux
+prosesler birbirleri ile sinyaller ile konuşuyor 
+
+

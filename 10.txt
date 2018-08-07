@@ -1,0 +1,182 @@
+yazılım yönetimi nedir=yazılımı yüklemesi ve kaldırması beklenir güncellemeleri takip etmesi
+linuxta repo sunucudan gelir güncellemeler windowsta uygulama kendini kontrol eder
+
+linuxun paket yönetim sistemleri bağımlı olduğu yazılımları direk kuruyor
+yazılımda kurulurkenki sorunları en aza indirmesi 
+
+windows şişer diye bir kavram var uninstall yapıldığında artık dosyalar kalıyor 
+
+RPM özellikleri (pakey yönetim sistemi )dpkg
+linux kurulum cdlerinden ya da repo sunucularından rmp elde edilebilir
+kurulu olmayan bir paketn d bilgileri de görüntüülenebilir rpm -qpi
+rpm -i kurmak için >indirmiş olmalısın dosyayı
+
+apt bir araçtır zypper bir araçtır karıştırmayın 
+rpm -e paketi  kaldırmak için
+rpm -U yeni sürme ykseltmek iççin 
+rpm -Fvh paketi yenilemek için 
+paketi denetleyebilirsin -V
+
+rpm -qa yüklü tm paketler 
+rpm -qf paket bağımlılıkları 
+yum bir araçtır centOS redhat fedora daitimlarında kullanılan bir araçtır
+
+zypper da bir araç
+zypper in nano
+
+
+dpkg paketleri .deb uzantılı apt kurulurken kullanılır(apt bir araç]
+dpkg -l yükll tm paketler 
+dpkg -p paketle ilgili bilgi 
+dpkg -L nano  paketin nereye kurulduğu 
+dpkg -s /bin/cp
+dpkg -i paket adı paketi ykler 
+dpkg -r
+
+apt-cache search paketadı
+pakeeti pinleyebilirsin o paket hiç güncellenmiyor
+aptitude aracı 
+openSUSE --yast arayüüzüncen  cd yi repo olarak ekleyebilirsin 
+DEBIAN -apt-cdrom add
+
+
+Rutinler 
+pekçok programın kullandığı ortak rutinler vardır
+rutinler belleğe alınır 
+/etc/ld.so.conf 
+ldd ile nesne bağımılığına bakılabilir
+delta kavramı =interneti çok kullanmadan aradaki farklılıkları kurar
+
+Sistem kayıt sunucusu 
+kayıt türleri 
+sislog deamon
+auth=kullnıcı doğrulamsı
+authpriv
+deamon
+kern
+
+kayıt öncelikleri**
+debug
+info
+notice
+error
+warning
+crit
+alert
+emerg
+
+logların bellli aralıklarla temizlek gerk
+ 
+syslog yapılanması 
+
+/etc/syslog conf
+
+
+emrkezi kayıt sunucuarının 
++ logları tek bir merkezde olması 
+saldırganın logları silmesinden etkilenmeme
+
+syslogd
+rsyslogd
+sistem kayıtlarını uçurmanın bedeli büyük 
+
+logrotate**
+
+rotasyonun sıklığı 
+son kaç kayıt
+eski kayıtlar ne olacak
+sıkıştırılıyor
+last komutu kullaniciların girş çıkış zamanları izlenir
+wtmp
+dmesg
+
+genel olarak log kayıtı çok önemli
+
+Kota kavramı 
+sınır demek
+
+hard kota ve soft kota
+spam
+
+/dev/sda2
+
+kota desteği aquota.user da bulunur 
+edquota süre ve kotannın miktarı dzenlenebilri 
+
+sistem başarısının izlenmesi (uzaktaki bir sistemde bilgi toplama ]
+
+lscpu
+cat/etc/mem.info
+
+
+sunucunun sanal mı fiziksel mi olup olmadığını nasıl anlarız
+
+uname -a kernel sürümü 
+
+rpm
+lsv relase 
+cat /etc/os-release ile bakablir
+/etc/cron. dizinleri faydalı olabilir zamanlanmış görevler için
+vmstat 1 5 ---makiineden 1 saniye aralıklarla 5 bilgi aldı 
+
+
+Kaynak kullanımın izlenmesi 
+işlemci
+bellek 
+disk
+
+lspci =bilgisayarın donaımı hakkında bilgi almak için 
+top
+diskteki toplam kapladığı alan du ile görntülenir 
+
+Süreçler
+r bekleyen 
+b kesilmez uykuda 
+w takas alanına aatılmı sureç
+
+vmstat çıktıları ilerirki zamanda anlamlı gelecek 
+id de eğer düşük değerler görülyorsa ram yetmiyor demektir
+uptime komutu sistemin yük ortalamsını gösteriri 
+/proc 
+//sistem başşarısını ölçerken yardımcı komutlar
+top
+vmstat
+ps
+df
+uptime
+
+
+Linux Çekirdeği 
+kullanıccı ve donanım arasinda bir aracı 
+monolitik bir yapıya sahip kernel
+manolitik yapı =çekirdeğe bir danınnım özellik eklemek istediğinde bunu çekirdeğe yapıştırabilirsin
+yekpare kernein dezavntajı=özeelik eklenince çekirdeğği derleme zorunluluğu 
+çekirdeği genel seçmek önemli  desktop kurarken 
+modullerle çalışır
+diske erişimi de kernel kontrol eder
+hybrid kernel =
+dipğer işletim sistemleri hybrid çekirdek kullanır,
+nvidia srücleri çekirdeğe eklenmez bundan dolayıda çekirdeğe eklenmelidir 
+dkms=dynamic kernel module support 
+
+uname -r
+A.B.C
+a=ana sürüm no büyk değişikler
+B=küçüük eklemeer tek ise stabil deil 
+C=revizyon no 
+
+
+lsmod =yüklü moduller
+modinfo modul
+
+insmod=çekirdeğe anında modul ekleme
+rmmod modul =modulu ekirdekten çıkarma
+modprobe 
+
+kurulu bir linuxd kernel nasıl güncellenir
+kernel upgradei ve yazılım çok farklı değildir
+proc normalde içi boştur kernel açıldığında içini doldurur
+
+internet web sitelerinden ibaret değildir
+wifo
+

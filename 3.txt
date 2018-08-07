@@ -1,0 +1,182 @@
+﻿linux sistem yönetimi 1.Düzey -3.gün
+
+-Bios donanımları tarar (post-check),post-check veri yolarına bakar donanımı tarar .
+-MBR boot order a göre nereyi boot edeceğine bakıyor (açılış sırasına göre )
+-Bios işletim sistemi olup olmadığına MBR (master boot recorda bakar)/boot flag 
+-Grub / windows bboot loader /lilo
+-grub ya da loader çekirdeği belleğe yükler 
+-çekirdek yüklendiğinde donanımlara bakar yazılımsal olarak post-check işlemini birdaha yapar 
+-linux açıırken akan yazılar kernelin yaptığı post-check işlemini tekrar yapar 
+-loglama sistemini devreye alır ,ikame için gerekli serviseelr 
+-startup servisler 
+-login ekranı 
+
+//skazi nedir ? =bir veri yolu türü 
+//ödev -yukardaki sıralama doğru mu 
+
+Her kaynağın sahibinin ,grubunun ,diğerlerinin hakları vardır 
+yazma ,çalıştırma ,okuma yetkisi 
+others =o gruba dahiil olmayan diğer kullanıcılar 
+dizinler için olan yetki dosyalardan farklı 
+her dizinin kendine ait bir erişim yetkisi var altındaki dizin farklı olabilir 
+
+chmod 
+yetkilrin düzenlenmesinde kullanılır
+r 
+w
+x
+
+dizinlerin yetkisi
+stuid(s)=kim çalıştırısa çalıştırsın sahibinin yetkisi ile çalışır örneğin passwd komutu 
+
+
+setgid(s)=kim çalışrırsa çalıştırsın dosyanın grubu aktif grup olur 
+
+**sticky(t)=dizine herkes yazabilir fakat başkalarına ait dosyaları değitiremez 
+
+find komutu ile suid bit olan dosyaları da aratabilirsini belli aralıklarla ls -l nin çıktısındaki stuid li dosyalar saklanır arka kapı kalmasın diye
+
+
+umask =yetki maskeleme mekanizması 
+022 olarak öntanımlıdır
+
+
+dosya dizinin sahibini değiştirmek 
+chown
+chgrp grup değiştirmek için
+
+bir sisteme girilice yapılacak ilk şey
+ben kimim (whoami)
+ve neredeyim (pwd)
+
+
+Disk yönetimi ve diskler ,dosya sistemleri
+
+Pata 
+Sata 
+hda--sda 
+
+bir sabitdiski 4 birincil bölüme bölnebilir 
+
+/dev/sda1
+/dev/sda2
+... primary partition
+
+
+extended prtition 
+sda5
+sda6 logical partititon
+
+
+fdisk -disk bölümleme işleri 
+
+ntfs
+fat32 fat 16 >4gb dan daha büyyyük dosya konulmuyor 
+vtat
+HPFS --OSx
+exfat>eğer boyutu daha büyük dosyaları sistemler arasında kullanmak için 
+ext 3,4,5
+xfs
+
+bir dosya sisteminde neler tutulur ?
+Dosya adı 
+Dosya boyutu
+Oluşturulma tarihi ,son erişim tarihi ,son değişiklik tarihi
+owner 
+yetkiler
+dosyanın bulunduğu yol 
+
+bir dosya sisteminde dosya kurtarmak index kurtarmak demek 
+
+RaiserFS ext3 bir dosya sisteminin transaction ve kayıt temelli olması demek önce indexse yazıyor ve biz bir dorun olduğunda bulabiliyoruz 
+kopyalamak ve move etmek arasındaki farkl 
+move da indekteki konum bilgisini değişştirir
+
+
+disklerin yönetilmesi fdisk
+fdisk -l =
+mkfs 
+
+gparted 
+cp komutunu yetkiyi değiştirmeden kopyalamak için -p parametresi 
+
+******ankara üni sunucusu loooolll***
+/home a yeni diks eklmek için 
+1-diski bölümle
+2-Disk bölümüne bir dosya sistemi oluştur 
+3-disk bölümünu geççici bir dizine bağla
+-ssistemi tek kullanıcı moduna çek 
+4-/hme un altındaki her şeyi yeni disk bölümünü bağladığın dizine haklarıyla beraber kopyala 
+5-datayı kopyaladığın dısk blümünü sistemden ayır 
+6-diski home dizinine bağla
+7-fstab ekle
+
+mount 
+umount
+
+supermount=otomatik mount işlemi yapıyor 
+
+dizinlerin iindeyken dizini bağı çözülmez
+man
+
+du=belirtttiğiniz dizin ve altında kapadığı alan
+df=doluluk bilgilerini gösterir ,sisteme mount ile bağlı olan disk bölüümlerinin o bölüm üzerindeki dosya sistemleri üzerindeki doluluk oranı 
+df ile du nun farkı 
+
+katı bağ nedir sembolik bağ nedir ?
+bağ dosyaları ilevsel olarak kısayollardan farklı değil
+bağ yaratılınca indexte tututlur 
+bir verinin diskten silinmesi için bu veriye point eden tüüm katı bağların verilerin silinmesi gerekir
+katı bağlar aynı disk böllüm içinde oluşturulabilir
+bir dosyaya katı bağlar 
+ln=katı bağ
+ln -s =sembolik bağ 
+başika bir dikte sembolik bağ oluturlabilir ama kati ağ olmaz
+katı bağlar silindiğinde veri tamameren silinir
+
+dosya 
+dizin 
+link
+
+kati bağ toplam olarak yer kaplamaz
+nano 
+file komutu ile katıbağ semboliik bağa bakmak
+
+Unix üstünde kurulu olduğu hereşeyi bir dosya gibi davranır
+
+b block device ls -l /dev/sda1
+
+c character device 
+
+ls -l /dev/
+
+
+Arşiv komutarı 
+
+tar
+zip
+gzip
+fg 
+jobs
+
+wc 
+
+
+sıkıştırmak demek =boşlukları almak ,tekilleştirmek
+jpg yi bmp ye çevir farka bak 
+spektrum dışındaki renkklerin ihmali
+gzip
+bzip2
+xz
+7zip
+
+
+df doluluk bilgilerini gösterir 
+
+kalıcı veri saklamayı araştır ,
+
+
+
+felaket kurtarma merkezi nedir ?
+
+

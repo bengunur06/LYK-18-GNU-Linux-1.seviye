@@ -1,0 +1,136 @@
+dmidecode -t system
+
+İnternet Süpersunucusu
+(inetd)donaım kaynaklarının sıkıntılı olduğu dönemlerde kullanılır
+initd nadir kullanılan hizmetler 
+/etc/services bilindik bağlantılar 
+
+sık kullanılan portlar
+80
+110
+53
+143 
+ssh 22 portu 
+
+
+tcp ve udp farkı 
+tcp=3 handshake protokol yapıyor udp yapmıyor
+
+telnet -ssh ın güvensiz hali komutlar snifferşar ile izlenebiliyor switch router cnfigurasyonlarında kullanılıyor 
+
+/etc/inetd.conf
+tcp vrapper nedir  
+
+inetd
+xinetd 
+
+acces_times
+rdirect
+no_acces
+max_load
+
+
+ftp protokolü 
+file transfer protocol
+netbios protocolü
+
+nfs 
+network file system
+unix lerde ağ üzerinden dizin paylaşma sistemi
+NIS=birden fazla sunucunun ortak /home dizinini ortak olarak kulanabilmesi 
+nfsidmap
+nfs-kernelserver
+
+paylaşım seçenekleri
+rw
+ro
+no_root_squash
+nfs sunucuna bağlanmak için tabi birde istemciye ihtiyaç var
+
+soft bağlama 
+hard bağlama =dosya istemi başarısız olursa kesilemez öldüürüüüleemz ve askıya alınır sıklıkla bu kullanılır
+
+
+NFS sunucsunun ram kullanımı i/o da dolayı
+doğru kurulmazsa nfs ciddi sıkıntı yaratır 
+
+samba- linux sistemlerinin netbios üzeirnde çalışmasını sağlıyor
+nedir niye kullanılır bil 
+
+
+SSH ile kabuk erişimi
+
+erişimde dikkat edilenler
+-bütnlük
+-araya girilip veri değiştirilemesin 
+
+SSL nedir ? 
+bir kütüphanedir aslında 
+ilk handshakeden sonra kriptolanmış bir halde devam ediyor iletişim
+silent ssl ile ssl arasında teknolojik fark yok 
+
+ssh bir program kümesi
+ssh -ssli kullanır bir kütphane olarak
+telnet'in iletişim 
+rcsshd start 
+/etc/init.d/sshd start
+ssh sunucuya değil kullanıcıya yapılır
+
+ssh kullanıcı@suunucu_adresi
+
+fingerptint bağlandığın sunucunun aynı olup olmadığını anlamak iççin kullanılır
+sunucuyla araya birisi gireerse ssh uyarır
+
+açık anahtar ve kapalı anahtar bizim ürettiğimiz bir dizinde tutulur sunucunki ayrı tutulur
+fingerprint güncellemelerle de değişebilir
+asymetric encryption 
+iodine
+id_rsa private key paylaşılmamalı 
+cat 
+
+cd .ssh
+nano authorized_keys
+
+ssh ile direk bağlanmada da komut göndermek mümkün
+sftp ile upload yapmak 
+put data.txt
+
+scp ile dosya indirme 
+rsync çoklu data kopyalaaması
+
+resync -av data.txt 
+ssy ile port yönlendirme de mümkün
+bengu@46.101.192.210
+
+GPRS zerinden telnet 
+filezilla 
+putty gen ile private ve public key üüretecek 
+
+sshfs ile sunucudaki bir dizini bağayabiliriz bilgisayarımıza 
+fuseremount -u kullanılır sshfs ile bağlanan yeri ayırmak için 
+whois ile alan adlarının bilgilerini görntüle
+ethtool ethernt kartı ile lgili detaylı işlem 
+
+
+network manager 
+profiller yaratmamızı saplıyor masaüstü ortamında yarıyor 
+IPv6 araştır 
+
+
+Veri tabanı 
+veri =bilginin 
+önce birini silerken diğerini de silmek gerekiyor 
+
+veri tekrarı olmaması 
+fonksiyonel bağlı olması verilerin 
+transaction bir btn oluşturan ve birlikte gerekleştirilmesi gerkn işlemler 
+bir işlemden biri günccellenene kadar diğeri değişmiyor 
+ACID = 
+bölünmezlik =Atomicity,
+tütarlık =Consistency
+izolasyon =Isolation=diğer transactionların o tarnsactionu etkileyememesi 
+Dayanıklılık =Durability=server dayanıklılığı ,eğerbaşarılı gerçekleşmezse hiç gerçekleşmemiş gibi oluyor 
+PostgreSQL*****
+
+
+

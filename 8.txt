@@ -1,0 +1,10 @@
+işletim sistemi kurulurken donanım uyumlulukları bakılır
+dd komutu
+systemd 
+systemctl start apache2.service
+nano info.php
+<?
+phpinfo();
+?>
+history de tarih ve saat bilgisini görüntülemek için
+

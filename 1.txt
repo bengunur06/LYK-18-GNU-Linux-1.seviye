@@ -1,0 +1,98 @@
+-Linux Sistem Yönetimi 1. düzey 
+**hemen hemen kullanılan her şeyde olan özellikler buna not defterinden hesap makinesine bilgsayara kadar olan kategoriler
+
+>Kullanıcı 
+
+>Uygulama 
+
+>İşletim sistemi 
+
+>Donanım (  RAM , Disk , CPU)
+
+
+
+işletim sistemnin temel görevi donanım kaynaklarını eşit bir şekilde paylaştırmak .
+işletim sistemi = (kabuk (işletim sisteminin çekireği ))
+
+Bir işletim sistemi nasıl olmalı:
+	*çok görevli =birden fazla uygulama çallıştırmak **aslında cpu da sadece 1 uygulama çalıştırıı ama time sharing sayesinde biren fazla çalıştırıyor gibi görünür. 
+	*çok kullanıcılı =aynı anda birden fazla kullanıcıya hizmet vermesi (aynı uygulamayı bile çalıştırabilmesi farklı bilgisayarlarda )
+windows95 çok kullanıcılı bir işletim sistmei değil aynı anda 1 kullanıcı bağlanabilir 
+	*zaman paylaşımı =uygulamalara çekirdeği dönüşüml kullandırtması böylece birden  fazla uygulamanın kullanılabilmesi 
+kernela uygulamalardan glen istekleri kernel alıyor ve sıraya koyarak cpu yu kullanmaya izin veriyor önceliklere dikkat ediyor öncelikli işlem yapıyor kullanıcı istemediği sürece diğer uygulamaların önceliği eşittir
+
+	*taşınabilirlik=her bilgisayar donanımında  çalişabilir olması 
+-- donanımsal taşıma
+--yazılımsal taşıma 
+ donanım uyumluluğu geerekir bir işletim si ** herhangi bir bilgisayara ios kuramazsın çünkü 
+ ****driver =o bilgisayarın içinde olan ekran kartı grafik kartı gibi nanelerin işletim sistemi tarafından kullanılabilir hale getiren )
+eğer driverlar yoksa kurulabilir ya da ona yugun bir anakart kullanılabilir  
+
+*yüksek performanslı =disk doğru şekilde yönetmesi artık önemli değil işletim sistemlerinde 
+Açılış zamanı -artık önemli değil 
+bellek yönetimi yapması ve işlemci kaynağını iyi şekilde yapması yüksek performanslı olduğu anlamınna geliyor 
+
+kullanıcı işetim sistemi ya da donanımla birebir etkileşim halinde değildir 
+"herşeyi öğrenemezsin ama ihtiyacın olan eyi arayıp öğrenebilirsin"
+
+unix'in gelişimi 1969
+bell lablarında bir grup developer bu konuştuğumuz özelliklerde bir işletim sistemi yapmayı hedefliyor 
+Sun -spark cpu
+IBM- risc cpu
+Compaq-
+HP
+digital-alpha cpu
+Sqi
+(cpu su yazlılmaanlar driver üretenlerinkini kullanıyr)
+yukardakiler driver üretiyor
+işlemci retenlere 
+Intel 
+Amd
+motorola
+
+Unix Sun -->Solaris
+Unix IBM -->AIX
+     HP-->HP-UX
+	 Digital ALpha Cpu-->Digital Unix
+	 Sqi-->VLTRIX
+
+	 
+	 1980 de bunlardan bazıları piyasadan düştü
+intel pentium Pro -zerinde matematik işlemleri için özel çip var (embedded)
+
+linux ve unix farkı 
+--cpu larla çalışma farkı 
+
+1980 Gnu software project started 
+farklı işletim sistemleri üzerinde çalışan yazılım üretiyor 
+
+bunlar retilirken linus torvalds minixi bozarak linuxu oluşturuuyor 
+
+linux tam zamanında gelerek 
+gnu linux(kernel) sayesinde Gnu tamamlanıyor
+
+özgür yazılım kamuya aittir 
+kaynak kodu açıktır
+-hatalar kolayca giderilir
+-işe uygun özelleştirilir=gömlü uygulmalar ,düşük kaynaklı pcler,sunucu sistemleri 
+
+linux bir sre sonra birok ilemcide çlışır hale geldi.unixde çalışan uygulamalar linuxda da çalışıyor
+
+distribution =çekirdek ile birlikte sunulan yazılımlar 
+-çekirdek ayarları 
+-uygulama yazılım seti 
+-dil desteği
+-ticari yazılımlar
+
+linux bilgisayarı açar cpu yu kontrol eder GNU ile birlikte kullanılır hale geldi+Shell
+Windows kabuk =explorel exe
+Linukda da bissürü kabuk var 
+
+lynx komutu terminalde o siteleri kullanmamızı sağlar 
+
+
+ödev -www.gnu.org dan git oku lisans ile ilgili
+GPL lisansını oku 
+ 
+
+
